@@ -1,0 +1,60 @@
+---
+layout: default
+---
+
+
+<div class="home">
+  <div class="layout1">
+  <h1 class="page-heading">ലേഖനങ്ങൾ</h1>
+  
+  {{ content }}
+
+  <ul class="post-list">
+    {% for post in paginator.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+       
+        <h2>
+          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+        </h2>
+       
+      </li>
+    {% endfor %}
+  </ul>
+
+<br>
+
+{% if paginator.total_pages > 1 %}
+<div class="pagination" align="center">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; </a>
+  {% else %}
+    <span>&laquo; </span>
+  {% endif %}
+&nbsp;
+  {% for page in (1..paginator.total_pages) %}
+    {% if page == paginator.page %}
+      <em>{{ page }}</em>
+    {% elsif page == 1 %}
+      <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+    {% else %}
+      <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+    {% endif %}
+&nbsp;
+  {% endfor %}
+
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}"> &raquo;</a>
+  {% else %}
+    <span> &raquo;</span>
+  {% endif %}
+&nbsp;
+</div>
+{% endif %}
+</div>
+
+  <p class="rss-subscribe">വരിക്കാരാവുക: <a href="{{ "/feed.xml" | relative_url }}">ഫീഡ്</a></p>
+
+</div>
+
+
