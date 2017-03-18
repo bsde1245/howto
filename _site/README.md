@@ -1,2 +1,2 @@
-# Jekyllblog
-My Blog
+# howto
+How to guide
