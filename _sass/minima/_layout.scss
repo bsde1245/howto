@@ -8,15 +8,9 @@
 
   // Positioning context for the mobile navigation icon
   position: relative;
-  padding: 1em;
-  background:  url("/img/header.jpg") no-repeat center center;
-  background-size: cover;
 }
 
 .site-title {
-  background-color: grey;
-  border-radius: 5px;
-  border-bottom: none;
   font-size: 26px;
   font-weight: 300;
   line-height: 56px;
@@ -39,7 +33,6 @@
   }
 
   .page-link {
-    border-bottom: none;
     color: $text-color;
     line-height: $base-line-height;
 
@@ -174,7 +167,7 @@
 }
 
 .page-heading {
-  font-size: 32px;
+  font-size: 20px;
 }
 
 .post-list {
@@ -192,9 +185,8 @@
 }
 
 .post-link {
-  border-bottom: none;
   display: block;
-  font-size: 20px;
+  font-size: 24px;
 }
 
 
@@ -207,21 +199,19 @@
 }
 
 .post-title {
-  font-size: 28px;
+  font-size: 42px;
   letter-spacing: -1px;
   line-height: 1;
 
   @include media-query($on-laptop) {
-    font-size: 26px;
+    font-size: 36px;
   }
 }
 
 .post-content {
-
   margin-bottom: $spacing-unit;
 
   h2 {
-
     font-size: 32px;
 
     @include media-query($on-laptop) {
@@ -245,170 +235,3 @@
     }
   }
 }
-
-    .youtube-player {
-        position: relative;
-        padding-bottom: 56.23%;
-        /* Use 75% for 4:3 videos */
-        height: 0;
-        overflow: hidden;
-        max-width: 100%;
-        background: #000;
-        margin: 5px;
-    }
-    
-    .youtube-player iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 100;
-        background: transparent;
-    }
-    
-    .youtube-player img {
-        bottom: 0;
-        display: block;
-        left: 0;
-        margin: auto;
-        max-width: 100%;
-        width: 100%;
-        position: absolute;
-        right: 0;
-        top: 0;
-        border: none;
-        height: auto;
-        cursor: pointer;
-        -webkit-transition: .4s all;
-        -moz-transition: .4s all;
-        transition: .4s all;
-    }
-    
-    .youtube-player img:hover {
-        -webkit-filter: brightness(75%);
-    }
-    
-    .youtube-player .play {
-        height: 72px;
-        width: 72px;
-        left: 50%;
-        top: 50%;
-        margin-left: -36px;
-        margin-top: -36px;
-        position: absolute;
-        background: url("//i.imgur.com/TxzC70f.png") no-repeat;
-        cursor: pointer;
-    }
-
-
-#searchBar {
-       font-size: 80%;
-       padding: 0.43em 0 0.57em;
-
-       #search {
-         float: right;
-
-         #searchString {
-           width: 133px;
-           border: none;
-           box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2) inset;
-           padding: 0.3em 0.6em;
-           background-color: #f6f5ea;
-           margin-right: 0;
-         }
-
-         #searchButton {
-           paddign: 0.3em 0.6em;
-           background-color: #847f77;
-           border: 1px solid #000000;
-           margin-left: 0;
-           color: #000000;
-           -webkit-appearance: none;
-           border-radius: 0;
-         }
-
-         #archives {
-           line-height: 2;
-           float: left;
-           color: #000000;
-           text-wrap: avoid;
-         }
-       }
-     }
-
-
-
-.site-avatar {
-  float: left;
-}
-
-
-
-
-* {word-break: break-all!important;}
-
-
-.layout12 {
-   padding: 1px;
-   margin: 10px;
-   background: #caeaf0;
-   border-radius: 3px;
-   box-shadow: 0 0 0 6px #ffffff, 1px 1px 6px 8px rgba(10, 10, 0, 0.4);   
-}
-.layout1 {
-   border-width:4px;
-   border-style: solid;
-   border-color: violet;
-   border-radius: 50px 0px 50px 0px;
-   -moz-border-radius:50px 0px 50px 0px;
--webkit-border-radius:50px 0px 50px 0px;
-   padding: 1px;
-   margin: 3px;
-   
-   
-      
-}
-
-
-.post-link1 {
-   border-bottom: none;
-}
-
-
-
-*, *:before, *:after {
-  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
-}
-
-.columnsContainer, footer { position: relative; margin: .5em; }
-
-.leftColumn, .rightColumn, footer {  border: 1px solid  #ccc; padding: .25em; }
-
-.leftColumn { margin-bottom: .5em; }
-
-@media screen and (min-width: 47.5em ) {
-  .leftColumn { margin-right: 22.5em; }
-
-	.rightColumn { position: absolute; top: 0; right: 0; width: 21.95em; }   
-}
-
-
-
-
-
-.stitched1 {
-padding: 7px;
-   background: #e1ebf2;
-   color: #000;
-   border-radius: 10px;
-   border: 2px dashed #000;
-   box-shadow: 0 0 0 4px #e1ebf2, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
-   text-shadow: -1px -1px #ecf3f7;
-}
-
-
-
-
-
-

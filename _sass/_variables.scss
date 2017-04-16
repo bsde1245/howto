@@ -1,0 +1,30 @@
+$custom-font-size: 20px;
+@import "../bower_components/bootstrap/scss/variables";
+
+
+.post-title
+{
+font-size: 20px;
+}
+.post-link
+{
+font-size: 20px;
+}
+#mainBlock
+{
+padding: 5px;
+}
+#subBlock
+{
+padding: 5px;
+}
+
+
+
+
+
+
+
+
+
+* {word-break: break-all!important;}

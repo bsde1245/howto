@@ -8,9 +8,7 @@ dl, dd, ol, ul, figure {
   padding: 0;
 }
 
-ul, ol {
-list-style-position: inside;
-}
+
 
 /**
  * Basic styling
@@ -95,7 +93,6 @@ h1, h2, h3, h4, h5, h6 {
 a {
   color: $brand-color;
   text-decoration: none;
-  border-bottom: 1px dotted; 
 
   &:visited {
     color: darken($brand-color, 15%);
@@ -103,8 +100,7 @@ a {
 
   &:hover {
     color: $text-color;
-    text-decoration: none;
-    border-bottom: 1px dotted;
+    text-decoration: underline;
   }
 }
 

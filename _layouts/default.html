@@ -4,34 +4,58 @@
   {% include head.html %}
 
   <body>
+ <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse fixed-top">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="/">Justine Chacko</a>
 
-    {% include header.html %}
-
-<div class="columnsContainer">
-
-	  	<div class="leftColumn">
-
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <ul class="navbar-nav mr-auto mt-2 mt-md-0">
+      <li class="nav-item">
+        <a class="nav-link" href="/">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/about">About Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/contact">Contact Us</a>
+      </li>
+      <!--
+      <form class="form-inline my-2 my-lg-0" role="search" method="get" action="{{site.baseurl}}/search/">
+		<input class="form-control mr-sm-2" id="searchString" name="searchString" placeholder="തിരയുക" type="text">
+        <button class="btn btn-outline-success my-2 my-sm-0" id="searchButton" name="googleSearchName" type="submit">Search</button>
+      </form>
+      -->
+      <form class="form-inline my-2 my-lg-0" role="search" method="get" action="{{site.baseurl}}/search2/">
+		<input class="form-control mr-sm-2" id="search-box" name="query" placeholder="തിരയുക" type="text">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </ul>
+    
+  </div>
+</nav>
+    <br><br><br>
+  <div class="container">
+  <div class="row">
+    <div class="col-md-8" id="mainBlock">
+		<div class="card card-block">  
 
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
         {{ content }}
       </div>
     </main>
+</div></div>
 
-</div>
-
-	  	<div class="rightColumn">
-
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        
-      </div>
-    </main>
-
-</div>
-</div>
-
+<div class="col-md-4" id="subBlock">
+<div class="card card-block">
+</div></div></div></div>
     {% include footer.html %}
+<script src="{{'/bower_components/jquery/dist/jquery.min.js' | prepend: site.baseurl}}"></script>
+<script src="{{'/bower_components/tether/dist/js/tether.min.js' | prepend: site.baseurl}}"></script>
+<script src="{{'/bower_components/bootstrap/dist/js/bootstrap.min.js' | prepend: site.baseurl}}"></script>
+<script src="{{ site.url }}/js/footer.js"></script>
 
   </body>
 

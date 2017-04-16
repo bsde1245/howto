@@ -5,156 +5,74 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
+
   <title>യൂട്യൂബിൽ നിന്നും വീഡിയോ ഡൌൺലോഡ് ചെയ്യുന്നത് എങ്ങനെ</title>
-  <meta name="description" content="">
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <meta name="description" content="ആദ്യമായി ബ്രൌസർ തുറന്ന് യൂട്യൂബിൽ നിന്നും ഇഷ്ടമുള്ള വീഡിയോ ക്ളിക്ക് ചെയ്യുക. ബ്രൗസറിന്റെ അഡ്രസ് ബാറിൽ നിന്നും വീഡിയോ ലിങ്ക് കോപ്പി(മുഴുവൻ സെലക്ട് ചെയ്യുക &amp;gt...">
+  <style type="text/css">
+   body{
+	  position: relative;
+  }
+  </style>
   <link rel="stylesheet" href="/assets/main.css">
   <link rel="canonical" href="http://localhost:4000/howto/2016/11/23/how-to-download-videos-from-youtube-without-any-software-easily.html">
-  <link rel="alternate" type="application/rss+xml" title="പതിവ് ചോദ്യങ്ങൾ" href="/feed.xml">
-<script src="http://localhost:4000/assets/jquery.min.js"></script>
-
-  <style>
-ul.pagination {
-    display: inline-block;
-    padding: 0;
-    margin: 0;
-}
-ul.pagination li {display: inline;}
-ul.pagination li a {
-    color: black;
-    float: left;
-    padding: 8px 16px;
-    text-decoration: none;
-    border-radius: 5px;
-}
-ul.pagination li a.active {
-    background-color: #4CAF50;
-    color: white;
-    border-radius: 5px;
-}
-ul.pagination li a:hover:not(.active) {background-color: #ddd;}
-</style>
-
-
-<script>
- 
-    /* Light YouTube Embeds by @labnol */
-    /* Web: http://labnol.org/?p=27941 */
- 
-    document.addEventListener("DOMContentLoaded",
-        function() {
-            var div, n,
-                v = document.getElementsByClassName("youtube-player");
-            for (n = 0; n < v.length; n++) {
-                div = document.createElement("div");
-                div.setAttribute("data-id", v[n].dataset.id);
-                div.innerHTML = labnolThumb(v[n].dataset.id);
-                div.onclick = labnolIframe;
-                v[n].appendChild(div);
-            }
-        });
- 
-    function labnolThumb(id) {
-        var thumb = '<img src="https://i.ytimg.com/vi/ID/hqdefault.jpg">',
-            play = '<div class="play"></div>';
-        return thumb.replace("ID", id) + play;
-    }
- 
-    function labnolIframe() {
-        var iframe = document.createElement("iframe");
-        var embed = "https://www.youtube.com/embed/ID?autoplay=1";
-        iframe.setAttribute("src", embed.replace("ID", this.dataset.id));
-        iframe.setAttribute("frameborder", "0");
-        iframe.setAttribute("allowfullscreen", "1");
-        this.parentNode.replaceChild(iframe, this);
-    }
- 
-</script>
-
-
+  <link rel="alternate" type="application/rss+xml" title="How to" href="/feed.xml">
+  <link rel="stylesheet" href="/css/styles.css">
+  
   
 </head>
 
 
   <body>
+ <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse fixed-top">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="/">Justine Chacko</a>
 
-    <header class="site-header" role="banner">
-
-  <div class="wrapper">
-<br>
-<div class="site-avatar"><img src="/me.png">
-</div>
-    <a class="site-title" href="/">പതിവ് ചോദ്യങ്ങൾ</a>
-
- <div class="grid" id="searchBar">
-      <div>
-          <div id="search">
-              <form role="search" method="get" action="/search/">
-                  <input id="searchString" name="searchString"
-                         placeholder="തിരയുക" type="text">
-                  <input id="searchButton" name="googleSearchName" type="submit" value="തിരയുക">
-              </form>
-          </div>         
-      </div>
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <ul class="navbar-nav mr-auto mt-2 mt-md-0">
+      <li class="nav-item">
+        <a class="nav-link" href="/">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/about">About Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/contact">Contact Us</a>
+      </li>
+      <!--
+      <form class="form-inline my-2 my-lg-0" role="search" method="get" action="/search/">
+		<input class="form-control mr-sm-2" id="searchString" name="searchString" placeholder="തിരയുക" type="text">
+        <button class="btn btn-outline-success my-2 my-sm-0" id="searchButton" name="googleSearchName" type="submit">Search</button>
+      </form>
+      -->
+      <form class="form-inline my-2 my-lg-0" role="search" method="get" action="/search2/">
+		<input class="form-control mr-sm-2" id="search-box" name="query" placeholder="തിരയുക" type="text">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </ul>
+    
   </div>
-   <nav class="site-nav">
-      <span class="menu-icon">
-        <svg viewBox="0 0 18 15" width="18px" height="15px">
-          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
-          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
-          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
-        </svg>
-      </span>
-
-      <div class="trigger">
-        
-          
-          <a class="page-link" href="/about/">എന്നെക്കുറിച്ച്</a>
-          
-        
-          
-          <a class="page-link" href="/categoryview/">ടാഗുകൾ</a>
-          
-        
-          
-        
-          
-        
-          
-          <a class="page-link" href="/search/">തിരയുക</a>
-          
-        
-          
-        
-          
-        
-      </div>
-    </nav>
-
-  </div>
-
-</header>
-
-
-<div class="columnsContainer">
-
-	  	<div class="leftColumn">
-
+</nav>
+    <br><br><br>
+  <div class="container">
+  <div class="row">
+    <div class="col-md-8" id="mainBlock">
+		<div class="card card-block">  
 
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
         <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-
-    <h2 class="post-title" itemprop="name headline">യൂട്യൂബിൽ നിന്നും വീഡിയോ ഡൌൺലോഡ് ചെയ്യുന്നത് എങ്ങനെ</h2>
-
+    <h5 class="post-title" itemprop="name headline">യൂട്യൂബിൽ നിന്നും വീഡിയോ ഡൌൺലോഡ് ചെയ്യുന്നത് എങ്ങനെ</h5>
     <p class="post-meta"><time datetime="2016-11-23T17:42:46+05:30" itemprop="datePublished">Nov 23, 2016</time></p>
   </header>
 
   <div class="post-content" itemprop="articleBody">
-    <div class="youtube-player" data-id="LoCwNt01Gys"></div>
+    <div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="//www.youtube.com/embed/LoCwNt01Gys?rel=0" allowfullscreen=""></iframe>
+</div>
 
 <p>ആദ്യമായി ബ്രൌസർ തുറന്ന് യൂട്യൂബിൽ നിന്നും ഇഷ്ടമുള്ള വീഡിയോ ക്ളിക്ക്  ചെയ്യുക.
 ബ്രൗസറിന്റെ അഡ്രസ് ബാറിൽ നിന്നും വീഡിയോ ലിങ്ക് കോപ്പി(മുഴുവൻ സെലക്ട് ചെയ്യുക &gt;റൈറ്റ് ക്ലിക്ക് &gt;കോപ്പി) ചെയ്യുക.
@@ -163,10 +81,10 @@ ul.pagination li a:hover:not(.active) {background-color: #ddd;}
 വിവിധ ഫോർമാറ്റിൽ ഉള്ള ഡൌൺലോഡ് ബട്ടണുകൾ വരുകയും, ക്ലിക്ക് ചെയ്തു ഡൌൺലോഡ് ചെയ്യുകയും ആവാം.
 പുതിയ ടിപ്പുമായി പിന്നീട് വരാം … ഗുഡ് ബൈ ….</p>
 
-</div>
+  </div>
 
   
-<div id="fb-root"></div>
+  <div id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
@@ -178,38 +96,30 @@ ul.pagination li a:hover:not(.active) {background-color: #ddd;}
 
 
 <div class="fb-comments" data-href="http://localhost:4000/howto/2016/11/23/how-to-download-videos-from-youtube-without-any-software-easily.html" data-numposts="20" data-width="100%" data-mobile="Auto-detected" data-order-by="reverse_time"></div>
-	
 
 </article>
 
-
-
       </div>
     </main>
+</div></div>
 
-</div>
-
-	  	<div class="rightColumn">
-
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        
-      </div>
-    </main>
-
-</div>
-</div>
-
+<div class="col-md-4" id="subBlock">
+<div class="card card-block">
+</div></div></div></div>
     <footer class="site-footer">
 
   <div class="wrapper">
 
-    
+    <h2 class="footer-heading">How to</h2>
 
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
         <ul class="contact-list">
-
+          <li>
+            
+              How to
+            
+            </li>
             
             <li><a href="mailto:contact@justinechacko.in">contact@justinechacko.in</a></li>
             
@@ -225,7 +135,7 @@ ul.pagination li a:hover:not(.active) {background-color: #ddd;}
       </div>
 
       <div class="footer-col footer-col-3">
-        <p>Tech news, mobile, gadgets, reviews, apps, internet.
+        <p>How to 
 </p>
       </div>
     </div>
@@ -234,6 +144,10 @@ ul.pagination li a:hover:not(.active) {background-color: #ddd;}
 
 </footer>
 
+<script src="/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="/bower_components/tether/dist/js/tether.min.js"></script>
+<script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="http://localhost:4000/js/footer.js"></script>
 
   </body>
 

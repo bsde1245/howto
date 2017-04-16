@@ -1,2 +1,0 @@
-# howto
-How to guide
