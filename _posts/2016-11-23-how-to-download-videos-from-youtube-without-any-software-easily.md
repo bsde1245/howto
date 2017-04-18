@@ -3,10 +3,9 @@ layout: post
 title:  "യൂട്യൂബിൽ നിന്നും വീഡിയോ ഡൌൺലോഡ് ചെയ്യുന്നത് എങ്ങനെ"
 date:   2016-11-23 17:42:46 +0530
 categories: howto
+youtubeId: LoCwNt01Gys
 ---
-<div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="//www.youtube.com/embed/LoCwNt01Gys?rel=0" allowfullscreen></iframe>
-</div>
+
 
 
 ആദ്യമായി ബ്രൌസർ തുറന്ന് യൂട്യൂബിൽ നിന്നും ഇഷ്ടമുള്ള വീഡിയോ ക്ളിക്ക്  ചെയ്യുക.

@@ -3,12 +3,11 @@ layout: post
 title:  "വിക്കിപീഡിയ ഡൌൺലോഡ് ചെയ്ത് ഇന്റർനെറ്റ് ഇല്ലാതെ ഉപയോഗിക്കുന്നതെങ്ങനെ"
 date:   2016-12-28 7:41:46 +0530
 categories: howto
+youtubeId: umRteJcapZs
 ---
 
 
-<div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="//www.youtube.com/embed/umRteJcapZs?rel=0" allowfullscreen></iframe>
-</div>
+
 
 
 [കിവിക്സ് ](http://www.kiwix.org/downloads/) എന്ന ലിങ്കിൽ നിന്നും കിവിക്സ് സോഫ്റ്റ്‌വെയർ ഡൌൺലോഡ് ചെയ്യുക.

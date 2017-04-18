@@ -11,25 +11,32 @@ layout: default
   <ul class="post-list">
     {% for post in site.posts %}
       <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        
 
-        <h3>
+<div class="card text-center">
+  <div class="card-header">
+    <h3>
           <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-        </h3>
-        
-{{ post.content | strip_html | truncate:150  }}
-<a href="{{ post.url }}"><em>Read more</em></a>
-
-        
+     </h3>
+  </div>
+  {% if post.youtubeId and post.youtubeId != "" %}
+  {% include youtubeplayer.html id=post.youtubeId %}
+  {% endif %}
+  <div class="card-block">
+    <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+    <p class="card-text">{{ post.content | strip_html | truncate:150  }}</p>
+    <a href="{{ post.url }}" class="btn btn-primary">Read more</a>
+  </div>
+</div>
+      <br>  
       </li>
     {% endfor %}
   </ul>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
-
-
-
-
-	
-	
+  	
 </div>
+
+
+
+
+
