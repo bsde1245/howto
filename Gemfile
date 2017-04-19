@@ -11,7 +11,7 @@ ruby RUBY_VERSION
 # Happy Jekylling!
 gem "jekyll", "3.4.3"
 
-gem "jekyll-paginate-v2"
+gem "jekyll-paginate"
 gem 'jekyll-sitemap'
 
 # This is the default theme for new Jekyll sites. You may change this to anything you like.

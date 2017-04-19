@@ -27,7 +27,7 @@ theme: minima
 gems:
   - jekyll-feed
   - jekyll-sitemap
-  
+  - jekyll-paginate
 
 exclude:
   - Gemfile
@@ -38,5 +38,6 @@ sass:
   - _sass
   - bower_components
   
-
+paginate: 6
+paginate_path: "page:num"
 
