@@ -58,7 +58,7 @@ layout: default
   {% endif %}
 </div>
 {% endif %}
--->
+
 <nav aria-label="...">
   
 {% if paginator.total_pages > 1 %}
@@ -73,7 +73,7 @@ layout: default
       <a class="page-link" href="{{ paginator.previous_page_path | prepend: site.baseurl }}" tabindex="-1">Previous</a>
 </li>
 {% endif %}
-<!--
+
   {% for page in (1..paginator.total_pages) %}
     {% if page == paginator.page %}
     <li class="page-item active">
@@ -85,7 +85,7 @@ layout: default
       <li class="page-item"><a href="{{ site.paginate_path | prepend: site.baseurl | replace: ':num', page }}">{{ page }}</a></li>
     {% endif %}
   {% endfor %}
--->     
+     
 {% if paginator.next_page %}
   <li class="page-item">
       <a class="page-link" href="{{ paginator.next_page_path | prepend: site.baseurl }}">Next</a>
@@ -100,7 +100,7 @@ layout: default
 {% endif %}
   
 </nav>
-  	
+  -->	
 </div>
 
 
