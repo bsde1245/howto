@@ -4,85 +4,170 @@
   <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#5bc0de" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Contact Us</title>
   <meta name="description" content="How to">
 
   <link rel="stylesheet" href="/assets/main.css">
   <link rel="canonical" href="http://localhost:4000/contact/">
   <link rel="alternate" type="application/rss+xml" title="How to" href="/feed.xml">
-  <link rel="stylesheet" href="/css/styles.css">
-  <script src="/bower_components/jquery/dist/jquery.min.js"></script>
-  <script src="/bower_components/tether/dist/js/tether.min.js"></script>
-  <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-  <script src="http://localhost:4000/js/footer.js"></script>
-  
   
   
 </head>
 
 
   <body>
- <nav class="navbar navbar-toggleable-md navbar-inverse bg-info fixed-top">
-  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <a class="navbar-brand" href="/">How to</a>
 
-  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-    <ul class="navbar-nav mr-auto mt-2 mt-md-0">
-      <li class="nav-item">
-        <a class="nav-link" href="/">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/about">About Us</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/contact">Contact Us</a>
-      </li>
-      <!--
-      <form class="form-inline my-2 my-lg-0" role="search" method="get" action="/search/">
-		<input class="form-control mr-sm-2" id="searchString" name="searchString" placeholder="തിരയുക" type="text">
-        <button class="btn btn-outline-success my-2 my-sm-0" id="searchButton" name="googleSearchName" type="submit">Search</button>
-      </form>
-      -->
-      <form class="form-inline my-2 my-lg-0" role="search" method="get" action="/search2/">
-		<input class="form-control mr-sm-2" id="search-box" name="query" placeholder="തിരയുക" type="text">
-        <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
-      </form>
-    </ul>
-    
-  </div>
-</nav>
-    <br><br><br>
+    <header class="site-header">
   <div class="container">
-  <div class="row">
-    <div class="col-md-8" id="mainBlock">
-		  
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">How to</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            
+            
+            <li><a class="page-link" href="/about/">About Us</a></li>
+            
+            
+            
+            <li><a class="page-link" href="/contact/">Contact Us</a></li>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <li><a class="page-link" href="/search2/">Search</a></li>
+            
+            
+            
+            
+            
+            
+            
+            
+            <form class="navbar-form navbar-left" role="search" method="get" action="/search2/">
+            <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search" id="search-box" name="query">
+            </div>
+            <button type="submit" class="btn btn-default">Search</button>
+            </form>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div><!--/.container-fluid -->
+    </nav>
+  </div> <!-- /container -->
+</header>
 
-    <main class="page-content" aria-label="Content">
+<br><br><br>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-9" id="mainBlock">
+   <main class="page-content" aria-label="Content">
       <div class="wrapper">
         <article class="post">
- <div class="card card-block">
+<div class="panel panel-default text-center">
+  <div class="panel-heading">
   <header class="post-header">
-    <h1 class="post-title">Contact Us</h1>
+    <h4>Contact Us</h4>
   </header>
-
+  </div>
   <div class="post-content">
+  <div class="panel-body">
     <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSetZOLaS7nDlAMmP_x4IuUXdNC4as7Wy2J97a8EWC1iWcSdcQ/viewform?embedded=true#start=embed" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
 
-  </div>
- </div>
+  </div></div></div>
+
 </article>
 
-      </div>
+    </div>
     </main>
 </div>
 
-<div class="col-md-4" id="subBlock">
-<div class="card card-block">
-</div></div></div></div>
+<div class="col-md-3" id="subBlock">
+
+
+<!--
+
+<div class="panel panel-default text-center">
+  <div class="panel-heading">
+   <h4>Categories</h4>
+  </div>
+<div class="panel-body">
+<div>
+<ul style="list-style: none;">
+    
+    
+<li>
+     <span class="site-tag">
+<h4>
+        <a href="/pages/general/#general">
+                general (1)
+        </a>
+</h4>
+    </span>
+</li>
+    
+<li>
+     <span class="site-tag">
+<h4>
+        <a href="/pages/howto/#howto">
+                howto (5)
+        </a>
+</h4>
+    </span>
+</li>
+    
+<li>
+     <span class="site-tag">
+<h4>
+        <a href="/pages/internet/#internet">
+                internet (1)
+        </a>
+</h4>
+    </span>
+</li>
+    
+</ul>
+    </div>
+ </div> </div>
+
+<div class="panel panel-default text-center">
+  <div class="panel-heading">
+   <h4>Stores</h4>
+  </div>
+
+<div class="panel-body">
+
+<div>
+<ul style="list-style: none;">
+    
+    
+</ul>
+    </div></div></div>
+-->
+</div>
+
+
+
+
+
+
+
+</div></div>
     <footer class="site-footer">
 
   <div class="wrapper">
@@ -92,7 +177,11 @@
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
         <ul class="contact-list">
-
+          <li>
+            
+              How to
+            
+            </li>
             
             <li><a href="mailto:contact@justinechacko.in">contact@justinechacko.in</a></li>
             
@@ -117,6 +206,9 @@
 
 </footer>
 
+<script src="/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
+<script src="/js/footer.js"></script>
 
 
   </body>

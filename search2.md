@@ -1,6 +1,6 @@
 ---
 layout: page
-title: തിരയുക
+title: Search
 permalink: /search2/
 ---
 <form action="/search2/" method="get">
