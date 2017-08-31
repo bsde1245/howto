@@ -24,8 +24,11 @@ layout: default_bootstrap
 {% if page.youtubeId and page.youtubeId != "" %}
   {% include youtubeplayer.html id=page.youtubeId %}
   {% endif %}
+
 <div class="panel-body text-justify">
     {{ content }}
+<a href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Facebook"><img src="/images/facebook.png" alt="facebook"></a>
+<a href="whatsapp://send?text={{ site.url}}{{ page.url }}" data-action="share/whatsapp/share"><img src="/images/whatsapp.png" alt="whatsapp"></a>
   </div></div>
 
   {% if site.disqus.shortname %}
