@@ -27,6 +27,8 @@ gems:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-paginate
+plugins:
+- jekyll-pwa-plugin
 
 exclude:
   - Gemfile
