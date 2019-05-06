@@ -1,9 +1,6 @@
 var urlsToCache = [
     'index.html',
-    '/assets/main.css',
-'/bower_components/jquery/dist/jquery.min.js',
-'/bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js',
-'/js/footer.js'
+    '/assets/main.css'
 ];
 
 var CACHE_NAME = 'progressive-hyde-cache-v1';
