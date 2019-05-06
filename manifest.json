@@ -14,7 +14,7 @@
         "sizes": "144x144",
         "type": "image/png"
     }],
-    "start_url": "/",
+    "start_url": "https://forumkeralam.ml",
     "display": "standalone",
     "background_color": "#fdfdfd",
     "theme_color": "#4acaa8"
