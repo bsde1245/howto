@@ -2,8 +2,8 @@
     "name": "test",
     "short_name": "Test",
     "icons": [{
-        "src": "img/manifest/image.png",
-        "sizes": "32x32",
+        "src": "img/manifest/144x144.png",
+        "sizes": "144x144",
         "type": "image/png"
     }],
     "start_url": "/",
