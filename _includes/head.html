@@ -14,4 +14,9 @@
   {% include google-analytics.html %}
   {% endif %}
   <link rel="manifest" href="{{ '/manifest.json' | relative_url }}">
+<script type="text/javascript">
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register("/sw.js");
+    }
+  </script>
 </head>
