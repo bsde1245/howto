@@ -52,13 +52,10 @@ DEPENDENCIES
   jekyll (= 3.4.3)
   jekyll-feed (~> 0.6)
   jekyll-paginate
-  jekyll-pwa-plugin (~> 2.2.2)
+  jekyll-pwa-plugin (= 2.2.3)
   jekyll-sitemap
   minima (~> 2.0)
   tzinfo-data
-
-RUBY VERSION
-   ruby 2.5.1p57
 
 BUNDLED WITH
    1.16.5

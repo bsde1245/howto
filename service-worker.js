@@ -1,5 +1,5 @@
 
-workbox.core.setCacheNameDetails({
+            workbox.core.setCacheNameDetails({
     prefix: 'xiaop-blog',
     suffix: 'v1',
     precache: 'precache',
