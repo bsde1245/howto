@@ -1,6 +1,7 @@
 var urlsToCache = [
     'index.html',
-    '/assets/main.css'
+    '/assets/main.css',
+'/about'
 ];
 
 var CACHE_NAME = 'progressive-hyde-cache-v1';
