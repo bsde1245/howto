@@ -6,7 +6,7 @@ var urlsToCache = [
     '/assets/main.css',
 '/about/index.html',
 {% for post in site.posts limit:2 %}
-'/{{ post.url }}',
+'{{ post.url }}',
 {% endfor %}
 '/contact/index.html'
 ];
