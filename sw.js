@@ -5,9 +5,9 @@ var urlsToCache = [
     'index.html',
     '/assets/main.css',
 '/about/index.html',
-{% for page in (1..paginator.total_pages) %}
-{% if page != 1 %}
-'/page{{ page }}/index.html',
+{% for page in site.pages limit:20 %}
+{% if page.url contains "page" %}
+'{{ page.url }}index.html',
 {% endif %}
 {% endfor %}
 {% for post in site.posts limit:30 %}
