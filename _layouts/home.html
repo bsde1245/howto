@@ -32,18 +32,18 @@ layout: default_bootstrap
   <ul class="pagination">
 {% if paginator.previous_page %}
     <li class="page-item">
-      <a class="page-link" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}/index.html" tabindex="-1">&laquo; Previous</a>
+      <a class="page-link" href="{{ paginator.previous_page_path | prepende: site.url }}">&laquo; Previous</a>
     </li>
 {% else %}
 <li class="page-item disabled">
-      <a class="page-link" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" tabindex="-1">&laquo; Previous</a>
+      <a class="page-link" href="{{ paginator.previous_page_path | prepend: site.baseurl }}" tabindex="-1">&laquo; Previous</a>
     </li>
 {% endif %}
 
    {% if paginator.next_page %}
-    <li class="page-item"><a class="page-link" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}/index.html">Next &raquo;</a></li>
+    <li class="page-item"><a class="page-link" href="{{ paginator.next_page_path | relative_url }}">Next &raquo;</a></li>
   {% else %}
-    <li class="page-item disabled"><a class="page-link" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a></li>
+    <li class="page-item disabled"><a class="page-link" href="{{ paginator.next_page_path }}">Next &raquo;</a></li>
   {% endif %}
   </ul>
 {% endif %}

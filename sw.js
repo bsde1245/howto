@@ -4,14 +4,15 @@
 var urlsToCache = [
     'index.html',
     '/assets/main.css',
-'/about/index.html',
-{% for c in paginator.total_pages %}
-'/{{ c }}/index.html',
+'/about/',
+{% for page in (1..paginator.total_pages) %}
+
+'/page{{ page }}/',
 {% endfor %}
 {% for post in site.posts limit:30 %}
 '{{ site.baseurl }}{{ post.url }}',
 {% endfor %}
-'/contact/index.html'
+'/contact/'
 ];
 
 var CACHE_NAME = 'progressive-hyde-cache-v1';
