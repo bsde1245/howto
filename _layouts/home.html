@@ -30,18 +30,22 @@ layout: default_bootstrap
 <nav aria-label="Page navigation">
 {% if paginator.total_pages > 1 %}
   <ul class="pagination">
-{% if paginator.previous_page %}
+{% if paginator.previous_page == 1 %}
+ <li class="page-item">
+      <a class="page-link" href="{{ paginator.previous_page_path | prepende: site.baseurl }}">&laquo; Previous</a>
+    </li>
+{% elsif paginator.previous_page %}
     <li class="page-item">
-      <a class="page-link" href="{{ paginator.previous_page_path | prepende: site.url }}">&laquo; Previous</a>
+      <a class="page-link" href="/page{{ paginator.previous_page | prepende: site.baseurl |replace: '/', '' }}/index.html">&laquo; Previous</a>
     </li>
 {% else %}
 <li class="page-item disabled">
-      <a class="page-link" href="{{ paginator.previous_page_path | prepend: site.baseurl }}" tabindex="-1">&laquo; Previous</a>
+      <a class="page-link" href="{{ paginator.previous_page_path | prepend: site.baseurl }}">&laquo; Previous</a>
     </li>
 {% endif %}
 
    {% if paginator.next_page %}
-    <li class="page-item"><a class="page-link" href="{{ paginator.next_page_path | relative_url }}">Next &raquo;</a></li>
+    <li class="page-item"><a class="page-link" href="/page{{ paginator.next_page | prepend: site.baseurl | replace: '/', '' }}/index.html">Next &raquo;</a></li>
   {% else %}
     <li class="page-item disabled"><a class="page-link" href="{{ paginator.next_page_path }}">Next &raquo;</a></li>
   {% endif %}
