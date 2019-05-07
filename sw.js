@@ -5,8 +5,11 @@ var urlsToCache = [
     'index.html',
     '/assets/main.css',
 '/about/index.html',
+{% for paginator.page in paginator.total_pages %}
+'/{{ paginator.page }}/index.html',
+{% endfor %}
 {% for post in site.posts limit:30 %}
-'{{ post.url }}',
+'{{ site.baseurl }}{{ post.url }}',
 {% endfor %}
 '/contact/index.html'
 ];
