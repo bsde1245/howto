@@ -28,7 +28,7 @@ gems:
   - jekyll-sitemap
   - jekyll-paginate
 
-permalink: /posts/:categories/:year/:month/:day/:title:output_ext
+
 
 exclude:
   - Gemfile
