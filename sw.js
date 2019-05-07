@@ -1,7 +1,7 @@
 var urlsToCache = [
     'index.html',
     '/assets/main.css',
-'https://forumkeralam.ml/about/'
+'https://forumkeralam.ml/'
 ];
 
 var CACHE_NAME = 'progressive-hyde-cache-v1';
