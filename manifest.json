@@ -1,6 +1,6 @@
 {
-    "name": "test",
-    "short_name": "Test",
+    "name": "{{ site.title }}",
+    "short_name": "{{ site.title }}",
     "icons": [{
         "src": "img/manifest/128x128.png",
         "sizes": "128x128",
