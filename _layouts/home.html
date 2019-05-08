@@ -36,7 +36,7 @@ layout: default_bootstrap
     </li>
 {% elsif paginator.previous_page %}
     <li class="page-item">
-      <a class="page-link" href="{{ site.baseurl }}/page{{ paginator.previous_page_path }}/index.html">&laquo; Previous</a>
+      <a class="page-link" href="{{ site.baseurl }}{{ paginator.previous_page_path }}/index.html">&laquo; Previous</a>
     </li>
 {% else %}
 <li class="page-item disabled">
