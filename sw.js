@@ -3,20 +3,20 @@
 
 var urlsToCache = [
     'index.html',
-    '/assets/main.css',
+    '/css/main.css',
 '/about/index.html',
-{% for page in site.pages limit:20 %}
+{% for page in site.pages limit:30 %}
 {% if page.url contains "page" %}
 '{{ page.url }}index.html',
 {% endif %}
 {% endfor %}
-{% for post in site.posts limit:30 %}
+{% for post in site.posts limit:100 %}
 '{{ site.baseurl }}{{ post.url }}',
 {% endfor %}
 '/contact/index.html'
 ];
 
-var CACHE_NAME = 'progressive-hyde-cache-v1';
+var CACHE_NAME = 'keralahost';
 
 self.addEventListener('install', function (event) {
     event.waitUntil(

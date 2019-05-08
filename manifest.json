@@ -16,11 +16,11 @@
         "sizes": "144x144",
         "type": "image/png"
     }],
-    "start_url": "/",
+    "start_url": "{{ site.baseurl }}/",
     "display": "standalone",
     "background_color": "#fdfdfd",
-    "theme_color": "#4acaa8",
-    "scope": "/",
+    "theme_color": "#868e96",
+    "scope": "{{ site.baseurl }}/",
     "lang": "en-US",
     "orientation": "any"
 }

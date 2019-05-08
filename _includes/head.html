@@ -14,9 +14,11 @@
   {% include google-analytics.html %}
   {% endif %}
   <link rel="manifest" href="{{ '/manifest.json' | relative_url }}">
+<script src="/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
 <script type="text/javascript">
     if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register("/sw.js");
+      navigator.serviceWorker.register("{{ site.baseurl }}/sw.js");
     }
   </script>
 </head>
