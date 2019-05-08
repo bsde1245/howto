@@ -11,7 +11,7 @@ var urlsToCache = [
 {% for post in site.posts limit:100 %}
 '{{ site.baseurl }}{{ post.url }}',
 {% endfor %}
-'{{ site.baseurl }}index.html'
+'{{ site.baseurl }}/index.html'
 ];
 
 var CACHE_NAME = 'progressive-hyde-cache-v1';
