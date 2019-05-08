@@ -4,22 +4,22 @@
     "name": "{{ site.title }}",
     "short_name": "{{ site.title }}",
     "icons": [{
-        "src": "img/manifest/128x128.png",
+        "src": "{{ site.baseurl }}/img/manifest/128x128.png",
         "sizes": "128x128",
         "type": "image/png"
     }, {
-        "src": "img/manifest/152x152.png",
+        "src": "{{ site.baseurl }}/img/manifest/152x152.png",
         "sizes": "152x152",
         "type": "image/png"
     }, {
-        "src": "img/manifest/144x144.png",
+        "src": "{{ site.baseurl }}/img/manifest/144x144.png",
         "sizes": "144x144",
         "type": "image/png"
     }],
     "start_url": "{{ site.baseurl }}/",
     "display": "standalone",
     "background_color": "#fdfdfd",
-    "theme_color": "#868e96",
+    "theme_color": "#17a2b8",
     "scope": "{{ site.baseurl }}/",
     "lang": "en-US",
     "orientation": "any"
