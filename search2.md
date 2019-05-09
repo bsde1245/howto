@@ -14,7 +14,7 @@ permalink: /search2/
 <script>
   window.store = {
     {% for post in site.posts %}
-      "{{ post.url | slugify }}": {
+      "{{ post.url | slugify | prepend: site.baseurl}}": {
         "title": "{{ post.title | xml_escape }}",
         "author": "{{ post.author | xml_escape }}",
         "category": "{{ post.category | xml_escape }}",
