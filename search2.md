@@ -19,7 +19,7 @@ permalink: /search2/
         "author": "{{ post.author | xml_escape }}",
         "category": "{{ post.category | xml_escape }}",
         "content": {{ post.content | strip_html | strip_newlines | jsonify }},
-        "url": "{{ post.url | xml_escape }}"
+        "url": "{{ post.url | xml_escape | prepend: site.baseurl}}"
       }
       {% unless forloop.last %},{% endunless %}
     {% endfor %}
