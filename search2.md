@@ -25,5 +25,5 @@ permalink: /search2/
     {% endfor %}
   };
 </script>
-<script src="/js/lunr.min.js"></script>
-<script src="/js/search.js"></script>
+<script src="howto/js/lunr.min.js"></script>
+<script src="howto/js/search.js"></script>
