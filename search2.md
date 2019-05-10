@@ -3,27 +3,23 @@ layout: page
 title: Search
 permalink: /search2/
 ---
-<form action="/search2/" method="get">
+<!-- <form action="/howto/search2/" method="get">
   <label for="search-box">Search</label>
   <input type="text" id="search-box" name="query">
   <input type="submit" value="search">
-</form>
+</form> -->
+<div id="search-container">
+<input type="text" id="search-input" placeholder="search...">
+<ul id="results-container"></ul>
+</div>
 
-<ul id="search-results"></ul>
+<script src="/howto/js/search.js"></script>
 
 <script>
-  window.store = {
-    {% for post in site.posts %}
-      "{{ post.url | slugify }}": {
-        "title": "{{ post.title | xml_escape }}",
-        "author": "{{ post.author | xml_escape }}",
-        "category": "{{ post.category | xml_escape }}",
-        "content": {{ post.content | strip_html | strip_newlines | jsonify }},
-        "url": "{{ post.url | xml_escape | prepend: site.baseurl}}"
-      }
-      {% unless forloop.last %},{% endunless %}
-    {% endfor %}
-  };
+SimpleJekyllSearch({
+  searchInput: document.getElementById('search-input'),
+  resultsContainer: document.getElementById('results-container'),
+  json: '/howto/search.json'
+})
 </script>
-<script src="/howto/js/lunr.min.js"></script>
-<script src="/howto/js/search.js"></script>
+
